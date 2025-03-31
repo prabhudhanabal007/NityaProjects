@@ -1,0 +1,46 @@
+.calculator-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+label, select, input, button {
+  display: block;
+  margin: 10px auto;
+  width: 80%;
+  padding: 5px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+h3 {
+  color: #333;
+}
+
+ul {
+  text-align: left;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  background: #e3f2fd;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}

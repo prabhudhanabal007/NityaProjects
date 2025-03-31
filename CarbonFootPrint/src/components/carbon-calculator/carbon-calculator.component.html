@@ -1,0 +1,24 @@
+<div class="calculator-container">
+  <label for="mode">Select Travel Mode:</label>
+  <select id="mode" [(ngModel)]="travelMode">
+    <option value="car">Car</option>
+    <option value="bus">Bus</option>
+    <option value="train">Train</option>
+    <option value="bicycle">Bicycle</option>
+    <option value="walking">Walking</option>
+  </select>
+
+  <label for="distance">Enter Distance (km):</label>
+  <input type="number" id="distance" [(ngModel)]="distance">
+
+  <button (click)="calculateFootprint()">Calculate</button>
+
+  <h3>Carbon Footprint: {{ carbonFootprint.toFixed(2) }} kg CO₂</h3>
+
+  <div *ngIf="ecoFriendlyOptions.length">
+    <h4>Eco-Friendly Suggestions:</h4>
+    <ul>
+      <li *ngFor="let option of ecoFriendlyOptions">{{ option }}</li>
+    </ul>
+  </div>
+</div>
