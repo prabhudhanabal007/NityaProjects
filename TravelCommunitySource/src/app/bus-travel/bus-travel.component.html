@@ -1,0 +1,13 @@
+<div class="container">
+    <h1 class="title">Bus Travel Stories</h1>
+    <form (ngSubmit)="addStory()">
+      <input [(ngModel)]="newStory" name="story" placeholder="Share your travel experience" required>
+      <button type="submit">Post</button>
+    </form>
+    <div class="stories">
+      <div *ngFor="let story of stories" class="story">
+        <p>{{ story }}</p>
+      </div>
+    </div>
+  </div>
+  
